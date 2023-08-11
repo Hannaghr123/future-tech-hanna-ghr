@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=FontName&display=swap" rel="stylesheet">
+    <title>AI-BRO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick="speak();">init audio</button>
+    <h1><center>MY-Ai</center></h1>
+    <div class="container">
+    <form onsubmit="
+        event.preventDefault();
+        conversationUserAdd(document.getElementById('input-text').value);
+        openai_test();
+        console.log(conversation);        ">
+            <input type="text" id="input-text" placeholder="search...">      
+        <br>
+            <button id="submit-button">Submit</button>
+    </form>
+        <div id="chat-container"></div>
+    </div>
+</body>
+    <script src="script.js"></script>
+</html> 

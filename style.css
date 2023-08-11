@@ -1,0 +1,109 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set a background color and font */
+
+  * {
+    font-family: 'Kanit', sans-serif;
+
+  }
+
+  body {
+  background-image: url('https://media.npr.org/assets/img/2023/05/24/gettyimages-1358149692-bf96c07fc26040785771044ba8470ff9d73a928c-s1100-c50.jpg'); /* Replace with the path to your image */
+  background-size: cover;
+  }
+  
+  /* Main container */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading style */
+  h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  /* Chat container */
+  #chat-container {
+    margin-top: 20px;
+  }
+  
+  /* Chat bubbles */
+  .chat-bubble-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .chat-bubble {
+    max-width: 70%;
+    padding: 10px 15px;
+    border-radius: 10px;
+  }
+  
+  .user {
+    background-color: #3f72af;
+    color: #ffffff;
+  }
+  
+  .assistant {
+    background-color: #b2b2b2;
+    color: #ffffff;
+  }
+  
+  /* User input form */
+  form {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  button#submit-button {
+    background-color: #3f72af;
+    color: #ffffff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* Mobile responsive styles */
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+  
+    .chat-bubble {
+      max-width: 90%;
+    }
+  
+    input[type="text"] {
+      padding: 8px;
+    }
+  
+    button#submit-button {
+      padding: 8px 15px;
+    }
+  }
